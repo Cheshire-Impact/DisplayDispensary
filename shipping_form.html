@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="%%description%%" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <title>%%title%%</title>
+    <style>
+      body {
+        background-color: #7b9d3e;
+      }
+      #pardot-form {
+        color: #666;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      #pardot-form p ::-webkit-input-placeholder {
+        color: #666;
+        opacity: 1;
+      }
+
+      #pardot-form p :-ms-input-placeholder {
+        color: #666;
+        opacity: 1;
+      }
+
+      #pardot-form p ::-ms-input-placeholder {
+        color: #666;
+        opacity: 1;
+      }
+
+      #pardot-form p ::placeholder {
+        color: #666;
+        opacity: 1;
+      }
+
+      #pardot-form p.error ::-webkit-input-placeholder {
+        color: #8b0000;
+        opacity: 1;
+      }
+
+      #pardot-form p.error :-ms-input-placeholder {
+        color: #8b0000;
+        opacity: 1;
+      }
+
+      #pardot-form p.error ::-ms-input-placeholder {
+        color: #8b0000;
+        opacity: 1;
+      }
+
+      #pardot-form p.error ::placeholder {
+        color: #8b0000;
+        opacity: 1;
+      }
+
+      #pardot-form p.no-label {
+        display: none;
+      }
+
+      #pardot-form span.error {
+        clear: left;
+        display: block;
+        font-weight: bold;
+        margin-top: 2px;
+        padding-left: 166px;
+      }
+
+      #pardot-form p.required label,
+      #pardot-form span.required label,
+      #pardot-form label.required label {
+        font-weight: 400;
+        background-image: none;
+      }
+
+      #pardot-form p span.description {
+        display: block;
+        margin-left: 153px;
+      }
+
+      #pardot-form p {
+        clear: none;
+        line-height: 1.4em;
+        margin: 0;
+        padding: 4px;
+      }
+
+      #pardot-form p:not(.col-sm-6) {
+        clear: both;
+      }
+
+      #pardot-form p label {
+        font-weight: 400;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 3px 13px 0 0;
+        text-align: left;
+        width: 100%;
+      }
+
+      #pardot-form p.submit {
+        margin: 0;
+        padding: 4px;
+        width: 100%;
+        text-align: center;
+      }
+
+      #pardot-form p.submit input {
+        width: 65%;
+        height: 60px;
+        background-color: #000000;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+        padding: 0;
+      }
+
+      #pardot-form p.pd-select {
+        margin-bottom: 5px;
+      }
+
+      #pardot-form p.pd-select label {
+        color: #333;
+        position: absolute;
+        top: 12px;
+        left: 14px;
+        pointer-events: none;
+      }
+
+      #pardot-form p.pd-select.error label {
+        color: #8b0000;
+      }
+
+      #pardot-form p.pd-select select {
+        border: 1px solid #ddd;
+        background-color: #fff;
+        font-weight: normal;
+        width: 100%;
+        border-radius: 0px;
+        border-style: solid;
+        padding: 10px 2px;
+        height: 42px;
+      }
+
+      #pardot-form input[type="checkbox"] {
+        width: 100%;
+      }
+
+      #pardot-form textarea.standard {
+        float: none;
+        height: 70px;
+        overflow: auto;
+        padding: 8px;
+        width: 100%;
+        border-radius: 0px;
+        border: 1px solid #ddd;
+      }
+
+      #pardot-form input {
+        font-weight: normal;
+        margin-right: 5px;
+        padding: 20px 8px 4px 8px;
+        border: 1px solid #ddd;
+        border-radius: 0px;
+      }
+
+      #pardot-form input.text {
+        width: 100%;
+      }
+      /*# sourceMappingURL=style.css.map */
+    </style>
+  </head>
+
+  <body>
+    %%content%%
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function() {
+        $(".field-label").each(function(index) {
+          if (
+            $(this)
+              .parent()
+              .hasClass("required") == true
+          ) {
+            var labelText = $(this).html() + "*";
+          } else {
+            var labelText = $(this).html();
+          }
+
+          if (
+            $(this)
+              .parent()
+              .hasClass("pd-select") == false
+          ) {
+            $(this)
+              .next()
+              .attr("placeholder", labelText);
+            $(this).hide();
+          }
+        });
+
+        // Hide Select Box Label When Selection Is Made
+
+        $("select").change(function() {
+          if (
+            $(this)
+              .children("option:selected")
+              .text() != ""
+          ) {
+            $(this)
+              .prev("label")
+              .hide();
+          } else {
+            $(this)
+              .prev("label")
+              .show();
+          }
+        });
+
+        // Hide Email Field If It Has A Value
+
+        var emailValue = $("p.email input").val();
+
+        if ($("p.email input").val() !== "") {
+          $("p.email").hide();
+        }
+      });
+    </script>
+  </body>
+</html>
